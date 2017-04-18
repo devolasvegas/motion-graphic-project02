@@ -6,9 +6,16 @@ nav {
     border: 1px solid black;
 }
 
+
+nav ul {
+    margin-bottom: 0;
+    padding: 2% 0;
+}
+
 nav ul li {
     display: inline-block;
     width: 12%;
+    height: 100%;
 }
 
 nav ul li a {
@@ -52,7 +59,7 @@ ul.legend li{
     color: #333;
 }
 
-    ul.legend li img{
+ul.legend li img{
     width: 15px;
 }
 
@@ -69,3 +76,25 @@ footer {
     margin-top: 50px;
     padding: 2% 0;
 }
+
+/* WEATHER WIDGET!!!!! ================== */
+
+#weather {
+    display: inline-block;
+    float: right;
+}
+
+#weather h2 {
+    display: inline-block;
+    margin-top: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#weather ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 15px
+}
+
+/* ============================ end weather widget */
