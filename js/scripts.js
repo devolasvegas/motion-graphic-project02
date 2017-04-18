@@ -11,6 +11,7 @@
  */
 $(document).ready(function() {
     loadWeather('The Heights',''); //@params location, woeid
+    // $('[class^=st1905]').mouseover(trailTip);
 });
 
 function loadWeather(location, woeid) {
@@ -33,3 +34,33 @@ function loadWeather(location, woeid) {
     });
 }
 
+// function trailTip() {
+//     var trailId = $(this).attr('id');
+//     var trailTexts = trailId.split(/(?=[A-Z])/);
+//     var tempText = '';
+//     for(var i = 0; i < trailTexts.length; i++) {
+//         tempText += trailTexts[i] + ' ';
+//     }
+//     console.log(tempText);
+//     $(this).qtip({
+//         content: {
+//             text: tempText
+//         }
+//     });
+// }
+
+$('[class^=st1905]').each(function(data){
+    var trailId = $(this).attr('id');
+    if(trailId) {
+        var trailTexts = trailId.split(/(?=[A-Z])/);
+        var tempText = '';
+        for(var i = 0; i < trailTexts.length; i++) {
+            tempText += trailTexts[i] + ' ';
+        }
+        $(this).attr('title', tempText);
+        $(this).tooltipster({
+            theme: 'tooltipster-punk',
+            contentCloning: true
+        });
+    }
+});
