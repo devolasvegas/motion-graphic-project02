@@ -77,6 +77,14 @@ footer {
     padding: 2% 0;
 }
 
+.trail-map a {
+    font-size: 1.75rem;
+}
+
+.trail-map {
+    text-align: right;
+}
+
 /* WEATHER WIDGET!!!!! ================== */
 
 #weather {
