@@ -109,6 +109,11 @@ footer {
 
 /* SVG MAP ===================================== */
 
+[class^=st1905] {
+    transition: all 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
 [class^=st1905]:hover {
     stroke-width: 15;
 }
